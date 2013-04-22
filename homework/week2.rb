@@ -26,18 +26,33 @@ MONOPOLY_GAME = { deeds: {
 
 # 1. Implement the method below
 def number_of_tokens
-  # Your Code Goes here
+  return MONOPOLY_GAME[:tokens].count 
 end
 
 # 2. Implement the method below.
 def sorted_list_of_tokens
-  # Your Code Goes here
+  return MONOPOLY_GAME[:tokens].sort 
 end
 
+# 3. Test Rent
+def rent_for(input)
+  return MONOPOLY_GAME[:deeds][input][:rent]
+end
 
-# 3. Now, define as many more methods as needed to make all the tests pass:
-#
-#
+#4. Test Price
+def price_for(input)
+  return  MONOPOLY_GAME[:deeds][input][:price]
+end
+
+#5. Test Number of Cards
+def count_number_of_monopoly_cards
+  return MONOPOLY_GAME[:cards].count
+end
+
+#6. Test Free Parking
+def pick_free_parking_card
+  return MONOPOLY_GAME[:cards][1]
+end
 
 
 ####################################################
